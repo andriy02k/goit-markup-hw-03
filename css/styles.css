@@ -23,6 +23,64 @@ body {
 }
 
 /* Reset */
+h1,h2,h3,h4,h5,h6,p {
+    margin: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+ul,ol {
+    margin: 0;
+    padding: 0;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.container {
+    width: 1158px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.header {
+    border-bottom: 1px solid var(--light);
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+    
+}
+
+.section {
+    padding: 60px 0;
+}
+
 .page {
     background-color: var(--white-background)
 }
@@ -34,6 +92,7 @@ body {
 .link {
     text-decoration: none;
     color: currentColor;
+    display: block;
 }
 
 .btn {
@@ -46,6 +105,19 @@ body {
     color: var(--primary-brand);
     background-color: var(--light);
     letter-spacing: 0.04em;
+
+    border: 1px solid var(--accent);
+    border-radius: 4px;
+    padding: 12px 24px;
+}
+
+.btn-list {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    justify-content: center;
+    margin-top: 96px;
+    margin-bottom: 72px;
 }
 
 .btn:hover,
@@ -56,6 +128,21 @@ body {
 .hero-btn {
     font-family: inherit;
     cursor: pointer;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--white-background);
+    background-color: var(--primary-brand);
+    letter-spacing: 0.04em;
+
+    min-width: 169px;
+    min-height: 56px;
+    margin-bottom: 188px;
+    margin-left: 492px;
+    display: block;
+    padding: 15px 31px;
+    border: 1px solid var(--primary-brand);
+    border-radius: 4px;
 }
 
 .hero-btn:hover,
@@ -71,10 +158,21 @@ body {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+
+    align-items: center;
+    margin-right: 76px;
 }
 
 .logo-part {
     color: var(--dark);
+}
+
+.page-nav {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding-top: 24px;
+        padding-bottom: 24px;
 }
 
 .page-nav .link{
@@ -92,6 +190,10 @@ body {
 
 .contacts {
     font-style: normal;
+
+    display: flex;
+    align-items: center;
+    gap: 40px;
 }
 
 
@@ -99,6 +201,9 @@ body {
 
 .section-hero {
     background-color: var(--dark);
+
+    align-items: center;
+    display: flex;
 }
 
 .hero-title {
@@ -108,19 +213,27 @@ body {
     letter-spacing: 0.02em;
     color: var(--white-background);
     text-align: center;
-}
 
-.hero-btn {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    color: var(--white-background);
-    background-color: var(--primary-brand);
-    letter-spacing: 0.04em
+    margin-top: 188px;
+    margin-bottom: 48px;
 }
 
 .hidden-section {
 letter-spacing: 0.02em;
+}
+
+.benefits-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    align-items: center;
+}
+
+.doing-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    align-items: center;
 }
 
 .subtitle {
@@ -129,6 +242,8 @@ letter-spacing: 0.02em;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--dark);
+
+    margin-bottom: 8px;
 }
 
 .doing-title {
@@ -138,10 +253,25 @@ letter-spacing: 0.02em;
     line-height: 1.11;
     text-align: center;
     text-transform: capitalize;
+
+    margin-bottom: 72px;
 }
 
 .our-team {
     background-color: var(--light);
+    min-height: 732px;
+}
+
+.our-team-container{
+    
+}
+
+.team-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    align-items: center;
+    
 }
 
 .our-team-title {
@@ -151,10 +281,16 @@ letter-spacing: 0.02em;
     text-align: center;
     letter-spacing: 0.02em;
     text-transform: capitalize;
+
+    display: block;
+    align-items: center;
+    padding-top: 120px;
+    padding-bottom: 72px;
 }
 
 .card-bg {
     background-color: var(--white-background);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .text {
@@ -166,8 +302,41 @@ letter-spacing: 0.02em;
 .footer {
     background-color: var(--dark);
     color: var(--light);
+    margin-top: 120px;
 }
 
 .logo-part-footer {
     color: var(--light);
+    margin-bottom: 16px;
 }
+
+.footer-container {
+    padding: 100px 0;
+}
+
+.footer-logo {
+    margin-bottom: 16px;
+}
+
+.card-content {
+    border: 1px solid var(--accent);
+    border-radius: 0px 0px 4px 4px;
+    border-top: none;
+    text-align: center;
+
+    padding: 32px 0;
+}
+
+.portfolio-card {
+    display: flex;
+    flex-basis: calc((100%-2*24px)/3);
+    flex-wrap: wrap;
+    gap: 48px 24px;
+}
+
+.card-content-portfolio {
+  justify-content: flex-start;
+  padding: 32px 16px;
+  border: 1px solid var(--accent);
+  border-top: none;
+} 
