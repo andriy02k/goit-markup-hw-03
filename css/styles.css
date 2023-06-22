@@ -171,6 +171,9 @@ ul,ol {
     display: flex;
     align-items: center;
     gap: 40px;
+}
+
+.page-nav-item {
     padding: 24px 0;
 }
 
