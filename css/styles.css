@@ -61,7 +61,7 @@ ul,ol {
 }
 
 .header {
-    border-bottom: 1px solid var(--light);
+    border-bottom: 1px solid var(--accent);
 }
 
 .header-container {
@@ -116,7 +116,6 @@ ul,ol {
     align-items: center;
     gap: 24px;
     justify-content: center;
-    margin-top: 96px;
     margin-bottom: 72px;
 }
 
@@ -124,6 +123,7 @@ ul,ol {
 .btn:focus {
     color: var(--white-background);
     background-color: var(--pressed-state);
+    border: 1px solid transparent;
 }
 .hero-btn {
     font-family: inherit;
@@ -137,11 +137,11 @@ ul,ol {
 
     min-width: 169px;
     min-height: 56px;
-    margin-bottom: 188px;
-    margin-left: 492px;
+    margin-left: auto;
+    margin-right: auto;
     display: block;
     padding: 15px 31px;
-    border: 1px solid var(--primary-brand);
+    border: none;
     border-radius: 4px;
 }
 
@@ -171,8 +171,7 @@ ul,ol {
     display: flex;
     align-items: center;
     gap: 40px;
-    padding-top: 24px;
-        padding-bottom: 24px;
+    padding: 24px 0;
 }
 
 .page-nav .link{
@@ -201,6 +200,7 @@ ul,ol {
 
 .section-hero {
     background-color: var(--dark);
+    padding: 188px 0;
 
     align-items: center;
     display: flex;
@@ -213,14 +213,24 @@ ul,ol {
     letter-spacing: 0.02em;
     color: var(--white-background);
     text-align: center;
-
-    margin-top: 188px;
-    margin-bottom: 48px;
+    max-width: 496px;
+    margin-bottom: 32px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .hidden-section {
 letter-spacing: 0.02em;
 }
+
+.benefits-section {
+    padding: 120px 0;
+}
+
+.benefits-item {
+    width: calc((100% - 72px) / 4);;
+}
+
 
 .benefits-list {
     display: flex;
@@ -246,6 +256,10 @@ letter-spacing: 0.02em;
     margin-bottom: 8px;
 }
 
+.doing-section {
+    padding-bottom: 120px;
+}
+
 .doing-title {
     font-weight: 700;
     font-size: 36px;
@@ -257,13 +271,14 @@ letter-spacing: 0.02em;
     margin-bottom: 72px;
 }
 
+.doing-item {
+    width: calc((100% - 48px) / 3);
+}
+
 .our-team {
     background-color: var(--light);
     min-height: 732px;
-}
-
-.our-team-container{
-    
+    padding: 120px 0;
 }
 
 .team-list {
@@ -284,13 +299,21 @@ letter-spacing: 0.02em;
 
     display: block;
     align-items: center;
-    padding-top: 120px;
-    padding-bottom: 72px;
+    margin-bottom: 72px;
 }
 
 .card-bg {
     background-color: var(--white-background);
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.card-content {
+    border: 1px solid var(--accent);
+    border-radius: 0px 0px 4px 4px;
+    border-top: none;
+    text-align: center;
+    padding: 32px 16px;
 }
 
 .text {
@@ -302,7 +325,7 @@ letter-spacing: 0.02em;
 .footer {
     background-color: var(--dark);
     color: var(--light);
-    margin-top: 120px;
+    padding: 100px 0;
 }
 
 .logo-part-footer {
@@ -310,28 +333,25 @@ letter-spacing: 0.02em;
     margin-bottom: 16px;
 }
 
-.footer-container {
-    padding: 100px 0;
-}
-
 .footer-logo {
     margin-bottom: 16px;
+    display: inline-block;
 }
 
-.card-content {
-    border: 1px solid var(--accent);
-    border-radius: 0px 0px 4px 4px;
-    border-top: none;
-    text-align: center;
+.footer-text {
+    max-width: 264px
+}
 
-    padding: 32px 0;
+.section-portfolio {
+    padding-top: 96px;
+    padding-bottom: 120px;
 }
 
 .portfolio-card {
     display: flex;
-    flex-basis: calc((100%-2*24px)/3);
     flex-wrap: wrap;
-    gap: 48px 24px;
+    column-gap: 24px;
+    row-gap: 48px;
 }
 
 .card-content-portfolio {
@@ -340,3 +360,7 @@ letter-spacing: 0.02em;
   border: 1px solid var(--accent);
   border-top: none;
 } 
+
+.card-item {
+    width: calc((100% - 48px) / 3);
+}
